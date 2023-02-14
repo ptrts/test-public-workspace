@@ -12,16 +12,11 @@ configure<WorkspacePluginExtension> {
     }
 
     workspaceRemoteUrlPathPostfix.set("workspace")
-    projectsParentDirectoryRelativePath.set(".")
+    //projectsParentDirectoryRelativePath.set("projects")
 
     directoryFactory.set(DashesDirectoryFactory())
     //directoryFactory.set(ReplaceDirectoryFactory("_"))
 
-    //workspaceProject("example/app", "example-app")
-    //workspaceProject("example/dynamic-api", "example-dynamic-api")
-    //workspaceProject("example/dynamic-dev", "example-dynamic-dev")
-    //workspaceProject("example/dynamic-dev-kotlin", "example-dynamic-dev-kotlin")
-    //workspaceProject("spring-boot-starter", "djig-spring-boot-starter")
-    //workspaceProject("properties-spring-boot-starter", "djig-properties-spring-boot-starter")
-    //workspaceProject("dynamic-api", "djig-dynamic-api")
+    workspaceProject("project1", "1")
+    workspaceProject("project2", "2")
 }
